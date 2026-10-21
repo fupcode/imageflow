@@ -7,7 +7,6 @@ import (
 	"math"
 	"net/http"
 	"path/filepath"
-	"sort"
 	"strconv"
 	"strings"
 	"time"
@@ -250,11 +249,6 @@ func listImagesFromMetadata(ctx context.Context, params queryParams, cfg *config
 
 		images = append(images, imageInfo)
 	}
-
-	// Sort by filename in descending order
-	sort.Slice(images, func(i, j int) bool {
-		return images[i].FileName > images[j].FileName
-	})
 
 	return images, nil
 }
