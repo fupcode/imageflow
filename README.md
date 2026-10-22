@@ -17,6 +17,8 @@
 
 ## 简介
 
+本项目基于 [Yuri-NagaSaki/ImageFlow](https://github.com/Yuri-NagaSaki/ImageFlow/) 魔改
+
 ImageFlow 是一个全栈图片管理平台，能够自动为不同设备和浏览器优化图片。它结合了高性能的 Go 后端和现代化的 Next.js 前端，提供智能图片转换、设备感知服务和强大的过滤功能。
 
 ## 预览
@@ -119,8 +121,8 @@ graph TB
 
 ```bash
 # 克隆仓库
-git clone https://github.com/fupcode/ImageFlow.git
-cd ImageFlow
+git clone https://github.com/fupcode/imageflow.git
+cd imageflow
 
 # 创建配置文件
 cp .env.example .env
